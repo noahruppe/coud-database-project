@@ -1,0 +1,94 @@
+### get all 
+GET http://localhost:3003/user
+
+### get single 
+GET http://localhost:3003/user/67f96b5b33972271ece8cb70
+
+
+### create a user
+POST http://localhost:3003/user
+Content-Type: application/json
+
+{
+    "firstname": "Nick",
+    "lastname": "Ruppe",
+    "userName": "nickey"
+}
+
+### update
+Put http://localhost:3003/user/67f96b5b33972271ece8cb70
+Content-Type: application/json
+
+{
+    "firstname": "jody",
+    "lastname": "brooke",
+    "email": "jody2@yahoo.com",
+    "favoritecolor": "Blue",
+    "birthday": "May 14, 1999"
+}
+
+
+### delete
+Delete http://localhost:3003/user/67f96b5b33972271ece8cb70
+
+
+
+
+
+### get playlist 
+GET http://localhost:3003/playlist/67f96c2f33972271ece8cb71
+
+
+### get a single playlist 
+GET http://localhost:3003/playlist/67f96c2f33972271ece8cb71/67fad85dab3ddecd855ca018
+
+
+### create playlist
+POST http://localhost:3003/playlist/67f96c2f33972271ece8cb71
+Content-Type: application/json
+
+{
+    "playlistName": "rap"
+}
+
+### update playlist 
+
+PUT http://localhost:3003/playlist/67f96c2f33972271ece8cb71/67fad85dab3ddecd855ca018
+Content-Type: application/json
+
+{
+    "playlistName": "country"
+}
+
+### delete playlist 
+DELETE http://localhost:3003/playlist/67f96c2f33972271ece8cb71/67fadb4df1d7e3b7d2e3c7c3
+
+
+
+### get all 
+GET http://localhost:3003/song/67fad85dab3ddecd855ca018
+
+### get single
+GET http://localhost:3003/song/67fad85dab3ddecd855ca018/67fadefb8307fa6025798faf
+
+### create a song
+POST http://localhost:3003/song/67fad85dab3ddecd855ca018
+Content-Type: application/json
+
+{
+    "artist": "manners",
+    "songTitle": "got the manners"
+}
+
+### update a song
+PUT http://localhost:3003/song/67fad85dab3ddecd855ca018/67fae5ba2d2b325db024fc88
+Content-Type: application/json
+
+{
+    "artist": "nick",
+    "songTitle": "theman"
+}
+
+
+### delete the song 
+DELETE http://localhost:3003/song/67fad85dab3ddecd855ca018/67fae5ba2d2b325db024fc88
